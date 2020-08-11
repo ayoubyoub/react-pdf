@@ -23,7 +23,9 @@ class IndexPage extends React.Component {
       res.setHeader("Content-Type", "application/pdf");
       res.end(buffer);
     }
-    return {};
+    return {
+      pdf: null,
+    }
   }
 
   render() {
