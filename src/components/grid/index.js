@@ -37,7 +37,7 @@ export const Grid = ({ headings }) => (
   <Container headingCount={headings.length}>
     <Section>
       {headings.map(h => (
-        <Head>{h}</Head>
+        <Head key={h.toString()}>{h}</Head>
       ))}
     </Section>
 

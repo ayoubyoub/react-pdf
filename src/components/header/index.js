@@ -23,15 +23,15 @@ const LogoWrapper = styled('div')(({ theme }) => ({
 
 const Logo = styled('img')(({ theme }) => ({
   padding: theme.padding[3],
-  width: theme.width[16],
-  height: theme.height[16],
+  width: theme.width[24],
+  height: theme.height[24],
   display: 'block'
 }));
 
 export const Header = ({ children }) => (
   <Container>
     <LogoWrapper>
-      <Logo src="http://localhost:3000/static/logo.png" />
+      <Logo src="https://i.ibb.co/pRZpGnv/image.png" alt="image"  />
       <CompanyInfo />
     </LogoWrapper>
     <Info>
