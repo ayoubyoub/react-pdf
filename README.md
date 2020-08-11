@@ -4,7 +4,7 @@
 
 ```
 yarn
-yarn dev
+yarn start
 ```
 
 ### To see HTML version:
