@@ -2,10 +2,9 @@ import { ThemeProvider } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import React from 'react';
 import DefaultTheme from 'react-tailwhip';
+import { Footer } from '../footer';
 
-import { Footer } from './footer';
-
-const PDFLayout = ({ children }) => (
+const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
     <html>
       <head>
@@ -19,8 +18,8 @@ const PDFLayout = ({ children }) => (
   </ThemeProvider>
 );
 
-PDFLayout.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node
 };
 
-export default PDFLayout;
+export default Layout;
