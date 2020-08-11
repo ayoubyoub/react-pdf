@@ -1,8 +1,8 @@
-import { ThemeProvider } from 'emotion-theming';
-import PropTypes from 'prop-types';
-import React from 'react';
-import DefaultTheme from 'react-tailwhip';
-import { Footer } from '../footer';
+import { ThemeProvider } from "emotion-theming";
+import PropTypes from "prop-types";
+import React from "react";
+import DefaultTheme from "react-tailwhip";
+import { Footer } from "../footer";
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default Layout;

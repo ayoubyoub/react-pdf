@@ -1,42 +1,42 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-const Container = styled('section')(({ theme, headingCount }) => ({
-  display: 'grid',
-  borderCollapse: 'collapse',
-  width: 'auto',
+const Container = styled("section")(({ theme, headingCount }) => ({
+  display: "grid",
+  borderCollapse: "collapse",
+  width: "auto",
   minWidth: theme.width.full,
-  gridTemplateColumns: `repeat(${headingCount}, minmax(150px, 1fr))`
+  gridTemplateColumns: `repeat(${headingCount}, minmax(150px, 1fr))`,
 }));
 
-const Section = styled('div')(({ theme }) => ({
-  display: 'contents'
+const Section = styled("div")(({ theme }) => ({
+  display: "contents",
 }));
 
-const Column = styled('div')(({ theme }) => ({
+const Column = styled("div")(({ theme }) => ({
   padding: theme.padding[3],
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
-  whiteSpace: 'normal',
-  fontSize: theme.fontSizes.xs
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+  whiteSpace: "normal",
+  fontSize: theme.fontSizes.xs,
 }));
 
-const Totals = styled('div')(({ theme }) => ({
+const Totals = styled("div")(({ theme }) => ({
   marginTop: theme.margin[4],
-  gridColumn: '5'
+  gridColumn: "5",
 }));
 
 const Head = styled(Column)(({ theme }) => ({
-  position: 'sticky',
+  position: "sticky",
   top: 0,
   fontSize: theme.fontSizes.lg,
   fontWeight: theme.fontWeights.medium,
-  paddingBottom: theme.padding[3]
+  paddingBottom: theme.padding[3],
 }));
 
 export const Grid = ({ headings }) => (
   <Container headingCount={headings.length}>
     <Section>
-      {headings.map(h => (
+      {headings.map((h) => (
         <Head key={h.toString()}>{h}</Head>
       ))}
     </Section>
