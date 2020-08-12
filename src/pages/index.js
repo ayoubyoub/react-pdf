@@ -5,6 +5,7 @@ import DefaultTheme from "react-tailwhip";
 import Fonctionnement from "../components/decision/fonctionnement";
 import Layout from "../components/layout";
 import { componentToPDFBuffer } from "../lib";
+import { Footer } from "../components/footer";
 
 class IndexPage extends React.Component {
   static async getInitialProps({ req, res, query }) {
@@ -37,7 +38,7 @@ class IndexPage extends React.Component {
             html,
             body {
               margin: 0;
-							overflow: "hidden";
+							overflow: hidden;
 							-webkit-print-color-adjust: exact;
             }
             * {
@@ -46,6 +47,7 @@ class IndexPage extends React.Component {
           `}
         />
         <Fonctionnement />
+				<Footer />
       </ThemeProvider>
     );
   }

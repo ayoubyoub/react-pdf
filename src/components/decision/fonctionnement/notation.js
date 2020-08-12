@@ -93,9 +93,9 @@ export const Notation = ({ headings }) => (
 
     <Flexcontainer>
       <Hsplit>
-        <Vsplit border="true" bottom="true" right="true">
+        <Vsplit border="true" bottom="true" right="true" left="true">
           <Box>
-            <Title> </Title>
+            <Title></Title>
           </Box>
         </Vsplit>
         <Vsplit title="true" bottom="true" left="true">

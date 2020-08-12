@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
             html,
             body {
               margin: 0;
-							overflow: "hidden";
+							overflow: hidden;
 							-webkit-print-color-adjust: exact;
             }
             * {
