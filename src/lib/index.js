@@ -6,18 +6,18 @@ export const componentToPDFBuffer = async (component) => {
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
-  const page = await browser.newPage();
+	const page = await browser.newPage();
   const options = {
     format: "A4",
     orientation: "portrait",
-    border: "10mm",
+    border: "1mm",
     footer: {
       height: "10mm",
     },
     type: "pdf",
     timeout: 30000,
   };
-  await page.setContent(html);
+  await page.setContent(html, { waitUntil: 'networkidle2' });
   const buffer = await page.pdf(options);
   return buffer;
 };

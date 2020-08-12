@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-import { CompanyInfo } from "./company";
 import { BanqueInfo } from "./banque";
 import { SuccursaleInfo } from "./succursale";
 import { AgenceInfo } from "./agence";
@@ -8,31 +7,48 @@ import { AgenceInfo } from "./agence";
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
+  position: "absolute",
+  right: -50,
+  top: 0,
+  left: 0,
 }));
 
 const Info = styled("div")(({ theme }) => ({
   display: "flex",
-  alignItems: "flex-start",
-  justifyContent: "space-between",
+	alignItems: "flex-start",
+	alignContent: "flex-end",
+	alignSelf: "flex-start",
+	justifyContent: "flex-end",
 }));
 
 const LogoWrapper = styled("div")(({ theme }) => ({
   display: "flex",
-  justifyContent: "space-between",
+  alignItems: "center",
+  justifyContent: "flex-start",
+  flexGrow: 1,
+  padding: "5px",
 }));
 
 const Logo = styled("img")(({ theme }) => ({
-  padding: theme.padding[3],
-  width: theme.width[24],
-  height: theme.height[24],
-  display: "block",
+  width: theme.width[16],
+  height: theme.height[16],
+}));
+
+const CompanyInfo = styled("p")(({ theme }) => ({
+	fontSize: "14px",
+	fontFamily: "Open Sans",
+  letterSpacing: "1px",
+  fontWeight: "800",
+  color: "#883744",
+  width: theme.width[160],
+  marginLeft: "5px",
 }));
 
 export const Header = ({ children }) => (
   <Container>
     <LogoWrapper>
-      <Logo src="https://i.ibb.co/pRZpGnv/image.png" alt="image" />
-      <CompanyInfo />
+      <Logo src="https://i.ibb.co/pRZpGnv/image.png" alt="logo" />
+      <CompanyInfo>BANQUE POPULAIRE</CompanyInfo>
     </LogoWrapper>
     <Info>
       <BanqueInfo />

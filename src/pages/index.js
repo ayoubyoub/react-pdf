@@ -1,4 +1,4 @@
-import { Global } from "@emotion/core";
+import { Global, css } from "@emotion/core";
 import { ThemeProvider } from "emotion-theming";
 import React from "react";
 import DefaultTheme from "react-tailwhip";
@@ -25,22 +25,25 @@ class IndexPage extends React.Component {
     }
     return {
       pdf: null,
-    }
+    };
   }
 
   render() {
     return (
       <ThemeProvider theme={DefaultTheme}>
         <Global
-          styles={{
-            "html, body ": {
-              margin: 0,
-              overflow: "hidden",
-            },
-            "*": {
-              boxSizing: "border-box",
-            },
-          }}
+          styles={css`
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+            html,
+            body {
+              margin: 0;
+							overflow: "hidden";
+							-webkit-print-color-adjust: exact;
+            }
+            * {
+              boxsizing: "border-box";
+            }
+          `}
         />
         <Fonctionnement />
       </ThemeProvider>
