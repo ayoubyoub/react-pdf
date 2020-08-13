@@ -110,5 +110,23 @@ export const FooterPage = styled("div")(({ theme }) => ({
   alignSelf: "center",
   justifyContent: "center",
 }));
+
+// Fonctionnement Styles
+export const FonctionnementMain = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  padding: theme.padding[10],
+  backgroundColor: theme.colors.white,
+}));
+
+export const Divider = styled("div")(({ theme, marginTop }) => ({
+  borderTop: "1px solid #979797",
+  marginTop: parseInt(marginTop),
+  width: theme.width.full,
+  position: "absolute",
+  right: 0,
+  top: 0,
+  left: 0,
+}));
 // Export Normlize Main CSS
 export default normalizeCSS;
