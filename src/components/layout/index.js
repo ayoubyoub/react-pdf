@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import DefaultTheme from "react-tailwhip";
 import { Footer } from "../footer";
-import normalizeCSS from "../../css/normalize-css";
+import normalizeCSS from "../../assets/css/normalize-css";
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>

@@ -4,9 +4,9 @@ import React from "react";
 import DefaultTheme from "react-tailwhip";
 import Fonctionnement from "../components/decision/fonctionnement";
 import Layout from "../components/layout";
-import { componentToPDFBuffer } from "../lib";
+import { componentToPDFBuffer } from "../assets/lib";
 import { Footer } from "../components/footer";
-import normalizeCSS from "../css/normalize-css";
+import normalizeCSS from "../assets/css/normalize-css";
 
 class IndexPage extends React.Component {
   static async getInitialProps({ req, res, query }) {

@@ -4,7 +4,7 @@ import { InfoFiche } from "./infoFiche";
 import { Notation } from "./notation";
 import { Taux } from "./taux";
 // Call Styles
-import { FonctionnementMain, Divider } from "../../../css/normalize-css";
+import { FonctionnementMain, Divider } from "../../../assets/css/normalize-css";
 // Fonctionnement Content
 const Fonctionnement = () => (
   <FonctionnementMain>

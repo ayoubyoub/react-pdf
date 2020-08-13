@@ -1,5 +1,5 @@
 // Call Styles
-import { Title, Text, Container } from "../../css/normalize-css";
+import { Title, Text, Container } from "../../assets/css/normalize-css";
 // Succursale Content
 export const SuccursaleInfo = () => (
   <Container padding="3" width="40">

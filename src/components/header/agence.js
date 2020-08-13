@@ -1,5 +1,5 @@
 // Call Styles
-import { Title, Text, Container } from "../../css/normalize-css";
+import { Title, Text, Container } from "../../assets/css/normalize-css";
 // Agence Content
 export const AgenceInfo = () => (
   <Container padding="3" width="48">

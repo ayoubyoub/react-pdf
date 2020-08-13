@@ -17,7 +17,7 @@ export const componentToPDFBuffer = async (component) => {
     type: "pdf",
     timeout: 30000,
   };
-  await page.setContent(html, { waitUntil: ['domcontentloaded', 'networkidle0', 'networkidle2'] });
+	await page.setContent(html, { waitUntil: ['domcontentloaded', 'load', 'networkidle0', 'networkidle2'] });
   const buffer = await page.pdf(options);
   return buffer;
 };
