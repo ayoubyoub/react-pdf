@@ -6,7 +6,7 @@ export const componentToPDFBuffer = async (component) => {
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
-  const page = await browser.newPage();
+	const page = await browser.newPage();
   const options = {
     format: "A4",
     orientation: "portrait",
@@ -18,7 +18,7 @@ export const componentToPDFBuffer = async (component) => {
     timeout: 30000,
   };
   await page.setContent(html, {
-    waitUntil: ["domcontentloaded", "load", "networkidle0", "networkidle2"],
+    waitUntil: ["domcontentloaded", "load", "networkidle0"],
   });
   const buffer = await page.pdf(options);
   return buffer;

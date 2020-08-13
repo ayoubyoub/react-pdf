@@ -1,5 +1,7 @@
 // Call Styled Lib
 import styled from "@emotion/styled";
+// Url server
+const url = 'http://localhost:3000';
 // Main Styles
 const Container = styled("div")(({ theme, padding, width }) => ({
   padding: theme.padding[padding],
@@ -21,7 +23,7 @@ const Text = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#883744",
   margin: "0px",
-  fontWeight: "bold",
+  fontWeight: "700",
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: "normal",
@@ -50,14 +52,17 @@ const Company = styled("div")(({ theme }) => ({
   flexGrow: 1,
   padding: "5px",
 }));
-const CompanyLogo = styled("img")(({ theme }) => ({
-  width: theme.width[16],
-  height: theme.height[16],
+const CompanyLogo = styled("div")(({ theme }) => ({
+	backgroundImage: `url('${url}/logo.png')`,
+	backgroundRepeat: 'no-repeat',
+	backgroundSize: 'contain',
+		height: '60px',
+		width: '60px',
 }));
 const CompanyInfo = styled("p")(({ theme }) => ({
   fontSize: "14px",
   letterSpacing: "1px",
-  fontWeight: "800",
+  fontWeight: "700",
   color: "#883744",
   width: theme.width[160],
   marginLeft: "5px",
@@ -86,6 +91,16 @@ const FooterPage = styled("div")(({ theme }) => ({
   alignItems: "center",
   alignSelf: "center",
   justifyContent: "center",
+}));
+const FooterText = styled("p")(({ bold }) => ({
+  fontSize: "12px",
+  color: "#883744",
+  margin: "0px",
+  fontWeight: bold ? "700" : "600",
+  fontStretch: "normal",
+  fontStyle: "normal",
+  lineHeight: "normal",
+  letterSpacing: ".3px",
 }));
 // Fonctionnement Styles
 const FonctionnementMain = styled("div")(({ theme }) => ({
@@ -136,7 +151,7 @@ const FicheBox = styled("div")(({ theme }) => ({
 const FicheTitre = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#883744",
-  fontWeight: "600",
+  fontWeight: "700",
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: "normal",
@@ -158,7 +173,7 @@ const NotationContainer = styled("section")(({ theme }) => ({
 const NotationTitre = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#4a4a4a",
-  fontWeight: "bold",
+  fontWeight: "700",
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: "normal",
@@ -217,7 +232,7 @@ const NotationText = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#883744",
   margin: theme.margin[0],
-  fontWeight: "bold",
+  fontWeight: "700",
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: "normal",
@@ -237,7 +252,7 @@ const TauxContainer = styled("section")(({ theme }) => ({
 const TauxTitre = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#4a4a4a",
-  fontWeight: "bold",
+  fontWeight: "700",
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: "normal",
@@ -296,7 +311,7 @@ const TauxText = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#883744",
   margin: theme.margin[0],
-  fontWeight: "bold",
+  fontWeight: "700",
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: "normal",
@@ -315,7 +330,8 @@ export default {
   FooterMain,
   FooterContent,
   FooterInfo,
-  FooterPage,
+	FooterPage,
+	FooterText,
   FonctionnementMain,
   Divider,
   FicheContainer,

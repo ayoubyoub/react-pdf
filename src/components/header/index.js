@@ -4,7 +4,7 @@ import main from "../../assets/css/main-css";
 export const Header = () => (
   <main.HeaderMain>
     <main.Company>
-      <main.CompanyLogo src="https://i.ibb.co/pRZpGnv/image.png" alt="logo" />
+      <main.CompanyLogo />
       <main.CompanyInfo>BANQUE POPULAIRE</main.CompanyInfo>
     </main.Company>
     <main.MainInfo>

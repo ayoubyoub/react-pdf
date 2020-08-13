@@ -2,7 +2,7 @@
 import { css } from "@emotion/core";
 // Normalize CSS APP
 const normalizeCSS = () => css`
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
   html,
   body {
     margin: 0;
