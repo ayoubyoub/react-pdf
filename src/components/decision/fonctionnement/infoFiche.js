@@ -1,133 +1,75 @@
-import styled from "@emotion/styled";
+// Call Styles
+import {
+  FicheContainer,
+  FicheTitre,
+  FicheContainerMain,
+  FicheHorizontal,
+  FicheVertical,
+  FicheBox,
+  Title,
+  Text,
+} from "../../../assets/css/normalize-css";
+// Fiche Content
+export const InfoFiche = () => (
+  <FicheContainer>
+    <FicheTitre>FICHE DE DÉCISION C.C.T / CRÉDIT FONCTIONNEMENT</FicheTitre>
 
-const Container = styled("section")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  marginTop: 86,
-  width: theme.width.full,
-  position: "absolute",
-  right: 0,
-  top: 0,
-  left: 20,
-}));
-
-const Titre = styled("p")(({ theme }) => ({
-  fontSize: "12px",
-  color: "#883744",
-  fontWeight: "600",
-  fontStretch: "normal",
-  fontStyle: "normal",
-  lineHeight: "normal",
-  letterSpacing: "1px",
-	margin: theme.margin[0],
-	marginBottom: 14,
-}));
-
-const Flexcontainer = styled("div")(({ theme }) => ({
-	width: theme.width.full,
-	paddingBottom: 22
-}));
-
-const Hsplit = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-}));
-
-const Vsplit = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-}));
-
-const Box = styled("div")(({ theme }) => ({
-  margin: "5px 40px 0 0",
-  display: "flex",
-  justifyContent: "space-between",
-  flexDirection: "column",
-  width: 350,
-}));
-
-const Title = styled("p")(({ theme }) => ({
-  fontSize: "11px",
-  color: "#4a4a4a",
-  fontWeight: "600",
-  fontStretch: "normal",
-  fontStyle: "normal",
-  lineHeight: "normal",
-  letterSpacing: "1px",
-  margin: theme.margin[0],
-}));
-
-const Text = styled("p")(({ theme }) => ({
-  fontSize: "12px",
-  color: "#883744",
-  margin: theme.margin[0],
-  fontWeight: "bold",
-  fontStretch: "normal",
-  fontStyle: "normal",
-  lineHeight: "normal",
-  letterSpacing: "1px",
-}));
-
-export const InfoFiche = ({ headings }) => (
-  <Container>
-    <Titre>FICHE DE DÉCISION C.C.T / CRÉDIT FONCTIONNEMENT</Titre>
-
-    <Flexcontainer>
-      <Hsplit>
-        <Vsplit>
-          <Box>
+    <FicheContainerMain>
+      <FicheHorizontal>
+        <FicheVertical>
+          <FicheBox>
             <Title>BÉNÉFICIAIRE</Title>
-          </Box>
-          <Box>
+          </FicheBox>
+          <FicheBox>
             <Text>LA BOITE SARL</Text>
-          </Box>
-        </Vsplit>
-        <Vsplit>
-          <Box>
+          </FicheBox>
+        </FicheVertical>
+        <FicheVertical>
+          <FicheBox>
             <Title>ACTIVITÉ</Title>
-          </Box>
-          <Box>
+          </FicheBox>
+          <FicheBox>
             <Text>AGROALIMENTAIRE ET DISTRIBUTION</Text>
-          </Box>
-        </Vsplit>
-        <Vsplit>
-          <Box>
+          </FicheBox>
+        </FicheVertical>
+        <FicheVertical>
+          <FicheBox>
             <Title>DATE DE CRÉATION</Title>
-          </Box>
-          <Box>
+          </FicheBox>
+          <FicheBox>
             <Text>07/11/2012</Text>
-          </Box>
-        </Vsplit>
-      </Hsplit>
-    </Flexcontainer>
+          </FicheBox>
+        </FicheVertical>
+      </FicheHorizontal>
+    </FicheContainerMain>
 
-    <Flexcontainer>
-      <Hsplit>
-        <Vsplit>
-          <Box>
+    <FicheContainerMain>
+      <FicheHorizontal>
+        <FicheVertical>
+          <FicheBox>
             <Title>RADICAL</Title>
-          </Box>
-          <Box>
+          </FicheBox>
+          <FicheBox>
             <Text>8773949</Text>
-          </Box>
-        </Vsplit>
-        <Vsplit>
-          <Box>
+          </FicheBox>
+        </FicheVertical>
+        <FicheVertical>
+          <FicheBox>
             <Title>RÉFÉRENCE DU DOSSIER</Title>
-          </Box>
-          <Box>
+          </FicheBox>
+          <FicheBox>
             <Text>1825705300</Text>
-          </Box>
-        </Vsplit>
-        <Vsplit>
-          <Box>
+          </FicheBox>
+        </FicheVertical>
+        <FicheVertical>
+          <FicheBox>
             <Title>DATE D'ENTRÉE EN RELATION</Title>
-          </Box>
-          <Box>
+          </FicheBox>
+          <FicheBox>
             <Text>19/04/2013</Text>
-          </Box>
-        </Vsplit>
-      </Hsplit>
-    </Flexcontainer>
-  </Container>
+          </FicheBox>
+        </FicheVertical>
+      </FicheHorizontal>
+    </FicheContainerMain>
+  </FicheContainer>
 );

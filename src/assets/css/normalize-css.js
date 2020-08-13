@@ -128,5 +128,53 @@ export const Divider = styled("div")(({ theme, marginTop }) => ({
   top: 0,
   left: 0,
 }));
+
+// Fonctionnement Fiche
+export const FicheContainer = styled("section")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  marginTop: 86,
+  width: theme.width.full,
+  position: "absolute",
+  right: 0,
+  top: 0,
+  left: 20,
+}));
+
+export const FicheContainerMain = styled("div")(({ theme }) => ({
+  width: theme.width.full,
+  paddingBottom: 22,
+}));
+
+export const FicheHorizontal = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "row",
+}));
+
+export const FicheVertical = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+}));
+
+export const FicheBox = styled("div")(({ theme }) => ({
+  margin: "5px 40px 0 0",
+  display: "flex",
+  justifyContent: "space-between",
+  flexDirection: "column",
+  width: 350,
+}));
+
+export const FicheTitre = styled("p")(({ theme }) => ({
+  fontSize: "12px",
+  color: "#883744",
+  fontWeight: "600",
+  fontStretch: "normal",
+  fontStyle: "normal",
+  lineHeight: "normal",
+  letterSpacing: "1px",
+  margin: theme.margin[0],
+  marginBottom: 14,
+}));
+
 // Export Normlize Main CSS
 export default normalizeCSS;
