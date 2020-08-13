@@ -1,5 +1,12 @@
 // Call Styles
-import { FooterMain, FooterInfo, FooterContent, Text, Title, FooterPage } from "../../assets/css/normalize-css";
+import {
+  FooterMain,
+  FooterInfo,
+  FooterContent,
+  Text,
+  Title,
+  FooterPage,
+} from "../../assets/css/normalize-css";
 // Footer Content
 export const Footer = () => (
   <FooterMain>
