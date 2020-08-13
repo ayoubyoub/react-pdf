@@ -1,34 +1,8 @@
-import styled from "@emotion/styled";
-
-const Container = styled("div")(({ theme }) => ({
-  padding: theme.padding[3],
-  width: theme.width[48],
-}));
-
-const Title = styled("p")(({ theme }) => ({
-	fontSize: "11px",
-	color: "#4a4a4a",
-  fontWeight: "600",
-  fontStretch: "normal",
-  fontStyle: "normal",
-  lineHeight: "normal",
-  letterSpacing: "1px",
-  margin: theme.margin[0],
-}));
-
-const Text = styled("p")(({ theme }) => ({
-	fontSize: "12px",
-	color: "#883744",
-	margin: theme.margin[0],
-  fontWeight: "bold",
-  fontStretch: "normal",
-  fontStyle: "normal",
-  lineHeight: "normal",
-  letterSpacing: "1px",
-}));
-
+// Call Styles
+import { Title, Text, Container } from "../../css/normalize-css";
+// Agence Content
 export const AgenceInfo = () => (
-  <Container>
+  <Container padding="3" width="48">
     <Title>AGENCE</Title>
     <Text>7863</Text>
   </Container>
