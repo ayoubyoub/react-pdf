@@ -3,7 +3,6 @@ import { Global, css } from "@emotion/core";
 import PropTypes from "prop-types";
 import React from "react";
 import DefaultTheme from "react-tailwhip";
-import { Footer } from "../footer";
 import normalizeCSS from "../../assets/css/normalize-css";
 
 const Layout = ({ children }) => (
@@ -15,7 +14,6 @@ const Layout = ({ children }) => (
       </head>
       <body>
         {children}
-        <Footer />
       </body>
     </html>
   </ThemeProvider>

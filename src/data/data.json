@@ -1,0 +1,23 @@
+{
+	"banque": "78",
+	"succursale": "626",
+	"agence": "7863",
+	"refDossier": "1825705300",
+	"beneficiare": "LA BOITE SARL",
+	"activite": "AGROALIMENTAIRE ET DISTRIBUTION",
+	"dateCreation": "07/11/2012",
+	"radical": "8773949",
+	"dateEntreeEnRelation": "19/04/2013",
+	"notationAnneePrecedente": "B",
+	"notationAnneeActuelle": "B",
+	"mouvementConfiePrecedente": "809 008",
+	"mouvementConfieActuelle": "734 924",
+	"pourcentageChiffreAffairesPrecedente": "50 %",
+	"pourcentageChiffreAffairesActuelle": "50 %",
+	"lignesDeCredits": "CREDIT MOYEN LONG TERME TAUX FIXE",
+	"applique": "12 %",
+	"sollicite": "09 %",
+	"propose": "10 %",
+	"prevuParLaGrille": "12 %",
+	"tauxAccorde": "11 %"
+}

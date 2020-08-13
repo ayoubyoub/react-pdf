@@ -1,34 +1,36 @@
 // Call Styles
 import main from "../../../assets/css/main-css";
+// Call labels
+import labels from "../../labels/labels.json";
 // Fiche Content
-export const InfoFiche = () => (
+export const InfoFiche = ({ data }) => (
   <main.FicheContainer>
-    <main.FicheTitre>FICHE DE DÉCISION C.C.T / CRÉDIT FONCTIONNEMENT</main.FicheTitre>
+    <main.FicheTitre>{labels.ficheTitre}</main.FicheTitre>
 
     <main.FicheContainerMain>
       <main.FicheHorizontal>
         <main.FicheVertical>
           <main.FicheBox>
-            <main.Title>BÉNÉFICIAIRE</main.Title>
+            <main.Title>{labels.beneficiare}</main.Title>
           </main.FicheBox>
           <main.FicheBox>
-            <main.Text>LA BOITE SARL</main.Text>
-          </main.FicheBox>
-        </main.FicheVertical>
-        <main.FicheVertical>
-          <main.FicheBox>
-            <main.Title>ACTIVITÉ</main.Title>
-          </main.FicheBox>
-          <main.FicheBox>
-            <main.Text>AGROALIMENTAIRE ET DISTRIBUTION</main.Text>
+            <main.Text>{data.beneficiare}</main.Text>
           </main.FicheBox>
         </main.FicheVertical>
         <main.FicheVertical>
           <main.FicheBox>
-            <main.Title>DATE DE CRÉATION</main.Title>
+            <main.Title>{labels.activite}</main.Title>
           </main.FicheBox>
           <main.FicheBox>
-            <main.Text>07/11/2012</main.Text>
+            <main.Text>{data.activite}</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>{labels.dateCreation}</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>{data.dateCreation}</main.Text>
           </main.FicheBox>
         </main.FicheVertical>
       </main.FicheHorizontal>
@@ -38,26 +40,26 @@ export const InfoFiche = () => (
       <main.FicheHorizontal>
         <main.FicheVertical>
           <main.FicheBox>
-            <main.Title>RADICAL</main.Title>
+            <main.Title>{labels.radical}</main.Title>
           </main.FicheBox>
           <main.FicheBox>
-            <main.Text>8773949</main.Text>
-          </main.FicheBox>
-        </main.FicheVertical>
-        <main.FicheVertical>
-          <main.FicheBox>
-            <main.Title>RÉFÉRENCE DU DOSSIER</main.Title>
-          </main.FicheBox>
-          <main.FicheBox>
-            <main.Text>1825705300</main.Text>
+            <main.Text>{data.radical}</main.Text>
           </main.FicheBox>
         </main.FicheVertical>
         <main.FicheVertical>
           <main.FicheBox>
-            <main.Title>DATE D'ENTRÉE EN RELATION</main.Title>
+            <main.Title>{labels.refDossier}</main.Title>
           </main.FicheBox>
           <main.FicheBox>
-            <main.Text>19/04/2013</main.Text>
+            <main.Text>{data.refDossier}</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>{labels.dateEntreeEnRelation}</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>{data.dateEntreeEnRelation}</main.Text>
           </main.FicheBox>
         </main.FicheVertical>
       </main.FicheHorizontal>

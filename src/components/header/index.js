@@ -1,24 +1,26 @@
 // Call Styles
 import main from "../../assets/css/main-css";
+// Call labels
+import labels from "../labels/labels.json";
 // Header Content
-export const Header = () => (
+export const Header = ({ data }) => (
   <main.HeaderMain>
     <main.Company>
       <main.CompanyLogo />
-      <main.CompanyInfo>BANQUE POPULAIRE</main.CompanyInfo>
+      <main.CompanyInfo>{labels.company}</main.CompanyInfo>
     </main.Company>
     <main.MainInfo>
       <main.Container padding="3">
-        <main.Title>BANQUE</main.Title>
-        <main.Text>78</main.Text>
+        <main.Title>{labels.banque}</main.Title>
+        <main.Text>{data.banque}</main.Text>
       </main.Container>
       <main.Container padding="3" width="40">
-        <main.Title>SUCCURSALE</main.Title>
-        <main.Text>626</main.Text>
+        <main.Title>{labels.succursale}</main.Title>
+        <main.Text>{data.succursale}</main.Text>
       </main.Container>
       <main.Container padding="3" width="48">
-        <main.Title>AGENCE</main.Title>
-        <main.Text>7863</main.Text>
+        <main.Title>{labels.agence}</main.Title>
+        <main.Text>{data.agence}</main.Text>
       </main.Container>
     </main.MainInfo>
   </main.HeaderMain>

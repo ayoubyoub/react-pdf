@@ -7,7 +7,8 @@ import Layout from "../components/layout";
 import { componentToPDFBuffer } from "../assets/lib";
 import { Footer } from "../components/footer";
 import normalizeCSS from "../assets/css/normalize-css";
-
+// Import Data
+import data from "../data/data.json";
 class IndexPage extends React.Component {
   static async getInitialProps({ req, res, query }) {
     const exportPDF = query.exportPDF === "true";
@@ -15,7 +16,8 @@ class IndexPage extends React.Component {
     if (!process.browser && isServer && exportPDF) {
       const buffer = await componentToPDFBuffer(
         <Layout>
-          <Fonctionnement />
+          <Fonctionnement data={data} />
+          <Footer data={data} />
         </Layout>
       );
       res.setHeader(
@@ -34,7 +36,7 @@ class IndexPage extends React.Component {
     return (
       <ThemeProvider theme={DefaultTheme}>
         <Global styles={css([normalizeCSS()])} />
-        <Fonctionnement />
+        <Fonctionnement data={data} />
         <button
           style={{
             position: "absolute",
@@ -49,7 +51,7 @@ class IndexPage extends React.Component {
         >
           PDF
         </button>
-        <Footer />
+        <Footer data={data} />
       </ThemeProvider>
     );
   }

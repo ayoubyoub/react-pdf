@@ -1,40 +1,44 @@
 // Call Styles
 import main from "../../../assets/css/main-css";
+// Call labels
+import labels from "../../labels/labels.json";
 // Taux Content
-export const Taux = () => (
+export const Taux = ({ data }) => (
   <main.TauxContainer>
-    <main.TauxTitre>2 . Taux : </main.TauxTitre>
+    <main.TauxTitre>{labels.tauxTitle}</main.TauxTitre>
 
     <main.TauxContainerMain>
       <main.TauxHorizontal>
         <main.TauxVertical title="true" bottom="true" extra="true">
           <main.TauxBox>
-            <main.TauxTitle normal="true">Lignes de crédits</main.TauxTitle>
+            <main.TauxTitle normal="true">
+              {labels.lignesDeCredits}
+            </main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical title="true" left="true" bottom="true">
           <main.TauxBox>
-            <main.TauxTitle>Appliqué</main.TauxTitle>
+            <main.TauxTitle>{labels.applique}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical title="true" left="true" bottom="true">
           <main.TauxBox>
-            <main.TauxTitle>Sollicité</main.TauxTitle>
+            <main.TauxTitle>{labels.sollicite}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical title="true" left="true" bottom="true">
           <main.TauxBox>
-            <main.TauxTitle>Proposé</main.TauxTitle>
+            <main.TauxTitle>{labels.propose}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical title="true" left="true" bottom="true">
           <main.TauxBox>
-            <main.TauxTitle>Prévu par la grille</main.TauxTitle>
+            <main.TauxTitle>{labels.prevuParLaGrille}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical title="true" left="true" bottom="true">
           <main.TauxBox>
-            <main.TauxTitle>Taux accordé</main.TauxTitle>
+            <main.TauxTitle>{labels.tauxAccorde}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
       </main.TauxHorizontal>
@@ -45,33 +49,33 @@ export const Taux = () => (
         <main.TauxVertical extra="true">
           <main.TauxBox>
             <main.TauxTitle normal="true">
-              CREDIT MOYEN LONG TERME TAUX FIXE
+              {data.lignesDeCredits}
             </main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical left="true">
           <main.TauxBox>
-            <main.TauxTitle>12 %</main.TauxTitle>
+            <main.TauxTitle>{data.applique}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical left="true">
           <main.TauxBox>
-            <main.TauxTitle>09 %</main.TauxTitle>
+            <main.TauxTitle>{data.sollicite}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical left="true">
           <main.TauxBox>
-            <main.TauxTitle>10 %</main.TauxTitle>
+            <main.TauxTitle>{data.propose}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical left="true">
           <main.TauxBox>
-            <main.TauxTitle>12 %</main.TauxTitle>
+            <main.TauxTitle>{data.prevuParLaGrille}</main.TauxTitle>
           </main.TauxBox>
         </main.TauxVertical>
         <main.TauxVertical left="true" title="true">
           <main.TauxBox>
-            <main.TauxText>11 %</main.TauxText>
+            <main.TauxText>{data.tauxAccorde}</main.TauxText>
           </main.TauxBox>
         </main.TauxVertical>
       </main.TauxHorizontal>
