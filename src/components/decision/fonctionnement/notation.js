@@ -14,7 +14,6 @@ const Container = styled("section")(({ theme }) => ({
 const Titre = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#4a4a4a",
-  fontFamily: "Open Sans",
   fontWeight: "bold",
   fontStretch: "normal",
   fontStyle: "normal",
@@ -65,7 +64,6 @@ const Title = styled("p")(({ theme, normal }) => ({
 	marginLeft: normal ? 20 : 0,
   fontSize: "11px",
   color: "#4a4a4a",
-  fontFamily: "Open Sans",
   fontWeight: "600",
   fontStretch: "normal",
   fontStyle: "normal",
@@ -79,7 +77,6 @@ const Text = styled("p")(({ theme }) => ({
   fontSize: "12px",
   color: "#883744",
   margin: theme.margin[0],
-  fontFamily: "Open Sans",
   fontWeight: "bold",
   fontStretch: "normal",
   fontStyle: "normal",

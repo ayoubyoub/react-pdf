@@ -12,7 +12,8 @@ const Layout = ({ children }) => (
             @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
             html,
             body {
-              margin: 0;
+							margin: 0;
+							font-family: "Open Sans";
 							overflow: hidden;
 							-webkit-print-color-adjust: exact;
             }

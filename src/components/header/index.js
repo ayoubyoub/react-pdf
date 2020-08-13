@@ -36,7 +36,6 @@ const Logo = styled("img")(({ theme }) => ({
 
 const CompanyInfo = styled("p")(({ theme }) => ({
 	fontSize: "14px",
-	fontFamily: "Open Sans",
   letterSpacing: "1px",
   fontWeight: "800",
   color: "#883744",
