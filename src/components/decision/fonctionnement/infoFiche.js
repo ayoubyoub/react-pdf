@@ -1,75 +1,66 @@
 // Call Styles
-import {
-  FicheContainer,
-  FicheTitre,
-  FicheContainerMain,
-  FicheHorizontal,
-  FicheVertical,
-  FicheBox,
-  Title,
-  Text,
-} from "../../../assets/css/normalize-css";
+import main from "../../../assets/css/main-css";
 // Fiche Content
 export const InfoFiche = () => (
-  <FicheContainer>
-    <FicheTitre>FICHE DE DÉCISION C.C.T / CRÉDIT FONCTIONNEMENT</FicheTitre>
+  <main.FicheContainer>
+    <main.FicheTitre>FICHE DE DÉCISION C.C.T / CRÉDIT FONCTIONNEMENT</main.FicheTitre>
 
-    <FicheContainerMain>
-      <FicheHorizontal>
-        <FicheVertical>
-          <FicheBox>
-            <Title>BÉNÉFICIAIRE</Title>
-          </FicheBox>
-          <FicheBox>
-            <Text>LA BOITE SARL</Text>
-          </FicheBox>
-        </FicheVertical>
-        <FicheVertical>
-          <FicheBox>
-            <Title>ACTIVITÉ</Title>
-          </FicheBox>
-          <FicheBox>
-            <Text>AGROALIMENTAIRE ET DISTRIBUTION</Text>
-          </FicheBox>
-        </FicheVertical>
-        <FicheVertical>
-          <FicheBox>
-            <Title>DATE DE CRÉATION</Title>
-          </FicheBox>
-          <FicheBox>
-            <Text>07/11/2012</Text>
-          </FicheBox>
-        </FicheVertical>
-      </FicheHorizontal>
-    </FicheContainerMain>
+    <main.FicheContainerMain>
+      <main.FicheHorizontal>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>BÉNÉFICIAIRE</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>LA BOITE SARL</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>ACTIVITÉ</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>AGROALIMENTAIRE ET DISTRIBUTION</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>DATE DE CRÉATION</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>07/11/2012</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+      </main.FicheHorizontal>
+    </main.FicheContainerMain>
 
-    <FicheContainerMain>
-      <FicheHorizontal>
-        <FicheVertical>
-          <FicheBox>
-            <Title>RADICAL</Title>
-          </FicheBox>
-          <FicheBox>
-            <Text>8773949</Text>
-          </FicheBox>
-        </FicheVertical>
-        <FicheVertical>
-          <FicheBox>
-            <Title>RÉFÉRENCE DU DOSSIER</Title>
-          </FicheBox>
-          <FicheBox>
-            <Text>1825705300</Text>
-          </FicheBox>
-        </FicheVertical>
-        <FicheVertical>
-          <FicheBox>
-            <Title>DATE D'ENTRÉE EN RELATION</Title>
-          </FicheBox>
-          <FicheBox>
-            <Text>19/04/2013</Text>
-          </FicheBox>
-        </FicheVertical>
-      </FicheHorizontal>
-    </FicheContainerMain>
-  </FicheContainer>
+    <main.FicheContainerMain>
+      <main.FicheHorizontal>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>RADICAL</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>8773949</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>RÉFÉRENCE DU DOSSIER</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>1825705300</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+        <main.FicheVertical>
+          <main.FicheBox>
+            <main.Title>DATE D'ENTRÉE EN RELATION</main.Title>
+          </main.FicheBox>
+          <main.FicheBox>
+            <main.Text>19/04/2013</main.Text>
+          </main.FicheBox>
+        </main.FicheVertical>
+      </main.FicheHorizontal>
+    </main.FicheContainerMain>
+  </main.FicheContainer>
 );

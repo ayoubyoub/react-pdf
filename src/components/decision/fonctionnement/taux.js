@@ -1,89 +1,80 @@
 // Call Styles
-import {
-  TauxContainer,
-  TauxTitre,
-  TauxContainerMain,
-  TauxHorizontal,
-  TauxVertical,
-  TauxBox,
-  TauxTitle,
-  TauxText,
-} from "../../../assets/css/normalize-css";
+import main from "../../../assets/css/main-css";
 // Taux Content
 export const Taux = () => (
-  <TauxContainer>
-    <TauxTitre>2 . Taux : </TauxTitre>
+  <main.TauxContainer>
+    <main.TauxTitre>2 . Taux : </main.TauxTitre>
 
-    <TauxContainerMain>
-      <TauxHorizontal>
-        <TauxVertical title="true" bottom="true" extra="true">
-          <TauxBox>
-            <TauxTitle normal="true">Lignes de crédits</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical title="true" left="true" bottom="true">
-          <TauxBox>
-            <TauxTitle>Appliqué</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical title="true" left="true" bottom="true">
-          <TauxBox>
-            <TauxTitle>Sollicité</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical title="true" left="true" bottom="true">
-          <TauxBox>
-            <TauxTitle>Proposé</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical title="true" left="true" bottom="true">
-          <TauxBox>
-            <TauxTitle>Prévu par la grille</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical title="true" left="true" bottom="true">
-          <TauxBox>
-            <TauxTitle>Taux accordé</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-      </TauxHorizontal>
-    </TauxContainerMain>
+    <main.TauxContainerMain>
+      <main.TauxHorizontal>
+        <main.TauxVertical title="true" bottom="true" extra="true">
+          <main.TauxBox>
+            <main.TauxTitle normal="true">Lignes de crédits</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical title="true" left="true" bottom="true">
+          <main.TauxBox>
+            <main.TauxTitle>Appliqué</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical title="true" left="true" bottom="true">
+          <main.TauxBox>
+            <main.TauxTitle>Sollicité</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical title="true" left="true" bottom="true">
+          <main.TauxBox>
+            <main.TauxTitle>Proposé</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical title="true" left="true" bottom="true">
+          <main.TauxBox>
+            <main.TauxTitle>Prévu par la grille</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical title="true" left="true" bottom="true">
+          <main.TauxBox>
+            <main.TauxTitle>Taux accordé</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+      </main.TauxHorizontal>
+    </main.TauxContainerMain>
 
-    <TauxContainerMain>
-      <TauxHorizontal>
-        <TauxVertical extra="true">
-          <TauxBox>
-            <TauxTitle normal="true">
+    <main.TauxContainerMain>
+      <main.TauxHorizontal>
+        <main.TauxVertical extra="true">
+          <main.TauxBox>
+            <main.TauxTitle normal="true">
               CREDIT MOYEN LONG TERME TAUX FIXE
-            </TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical left="true">
-          <TauxBox>
-            <TauxTitle>12 %</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical left="true">
-          <TauxBox>
-            <TauxTitle>09 %</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical left="true">
-          <TauxBox>
-            <TauxTitle>10 %</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical left="true">
-          <TauxBox>
-            <TauxTitle>12 %</TauxTitle>
-          </TauxBox>
-        </TauxVertical>
-        <TauxVertical left="true" title="true">
-          <TauxBox>
-            <TauxText>11 %</TauxText>
-          </TauxBox>
-        </TauxVertical>
-      </TauxHorizontal>
-    </TauxContainerMain>
-  </TauxContainer>
+            </main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical left="true">
+          <main.TauxBox>
+            <main.TauxTitle>12 %</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical left="true">
+          <main.TauxBox>
+            <main.TauxTitle>09 %</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical left="true">
+          <main.TauxBox>
+            <main.TauxTitle>10 %</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical left="true">
+          <main.TauxBox>
+            <main.TauxTitle>12 %</main.TauxTitle>
+          </main.TauxBox>
+        </main.TauxVertical>
+        <main.TauxVertical left="true" title="true">
+          <main.TauxBox>
+            <main.TauxText>11 %</main.TauxText>
+          </main.TauxBox>
+        </main.TauxVertical>
+      </main.TauxHorizontal>
+    </main.TauxContainerMain>
+  </main.TauxContainer>
 );

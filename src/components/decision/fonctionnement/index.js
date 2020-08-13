@@ -2,19 +2,19 @@
 import { Header as HeaderFonctionnement } from "../../header";
 import { InfoFiche as InfoFicheFonctionnement } from "./infoFiche";
 import { Notation as NotationFonctionnement } from "./notation";
-import { Taux } from "./taux";
+import { Taux as TauxFonctionnement } from "./taux";
 // Call Styles
-import { FonctionnementMain, Divider } from "../../../assets/css/normalize-css";
+import main from "../../../assets/css/main-css";
 // Fonctionnement Content
 const Fonctionnement = () => (
-  <FonctionnementMain>
+  <main.FonctionnementMain>
     <HeaderFonctionnement />
-    <Divider marginTop="75" />
+    <main.Divider marginTop="75" />
     <InfoFicheFonctionnement />
-    <Divider marginTop="250" />
+    <main.Divider marginTop="250" />
     <NotationFonctionnement />
-    <Taux />
-  </FonctionnementMain>
+    <TauxFonctionnement />
+  </main.FonctionnementMain>
 );
 // Export Fonctionnement
 export default Fonctionnement;

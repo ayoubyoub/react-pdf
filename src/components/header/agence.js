@@ -1,9 +1,9 @@
 // Call Styles
-import { Title, Text, Container } from "../../assets/css/normalize-css";
+import main from "../../assets/css/main-css";
 // Agence Content
 export const AgenceInfo = () => (
-  <Container padding="3" width="48">
-    <Title>AGENCE</Title>
-    <Text>7863</Text>
-  </Container>
+  <main.Container padding="3" width="48">
+    <main.Title>AGENCE</main.Title>
+    <main.Text>7863</main.Text>
+  </main.Container>
 );

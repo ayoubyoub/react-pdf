@@ -1,101 +1,92 @@
 // Call Styles
-import {
-  NotationContainer,
-  NotationTitre,
-  NotationContainerMain,
-  NotationHorizontal,
-  NotationVertical,
-  NotationBox,
-  NotationTitle,
-  NotationText,
-} from "../../../assets/css/normalize-css";
+import main from "../../../assets/css/main-css";
 // Notation Content
 export const Notation = () => (
-  <NotationContainer>
-    <NotationTitre>
+  <main.NotationContainer>
+    <main.NotationTitre>
       1 . Notation, mouvement confié et chiffre d’affaires :
-    </NotationTitre>
+    </main.NotationTitre>
 
-    <NotationContainerMain>
-      <NotationHorizontal>
-        <NotationVertical border="true" bottom="true" right="true" left="true">
-          <NotationBox>
-            <NotationTitle></NotationTitle>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical title="true" bottom="true" left="true">
-          <NotationBox>
-            <NotationTitle>Année précédente</NotationTitle>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical title="true" left="true" bottom="true">
-          <NotationBox>
-            <NotationTitle>Année actuelle</NotationTitle>
-          </NotationBox>
-        </NotationVertical>
-      </NotationHorizontal>
-    </NotationContainerMain>
+    <main.NotationContainerMain>
+      <main.NotationHorizontal>
+        <main.NotationVertical border="true" bottom="true" right="true" left="true">
+          <main.NotationBox>
+            <main.NotationTitle></main.NotationTitle>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical title="true" bottom="true" left="true">
+          <main.NotationBox>
+            <main.NotationTitle>Année précédente</main.NotationTitle>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical title="true" left="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationTitle>Année actuelle</main.NotationTitle>
+          </main.NotationBox>
+        </main.NotationVertical>
+      </main.NotationHorizontal>
+    </main.NotationContainerMain>
 
-    <NotationContainerMain>
-      <NotationHorizontal>
-        <NotationVertical title="true" bottom="true">
-          <NotationBox>
-            <NotationTitle normal="true">Notation</NotationTitle>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical left="true" bottom="true">
-          <NotationBox>
-            <NotationText>B</NotationText>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical left="true" bottom="true">
-          <NotationBox>
-            <NotationText>B</NotationText>
-          </NotationBox>
-        </NotationVertical>
-      </NotationHorizontal>
-    </NotationContainerMain>
+    <main.NotationContainerMain>
+      <main.NotationHorizontal>
+        <main.NotationVertical title="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationTitle normal="true">Notation</main.NotationTitle>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical left="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationText>B</main.NotationText>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical left="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationText>B</main.NotationText>
+          </main.NotationBox>
+        </main.NotationVertical>
+      </main.NotationHorizontal>
+    </main.NotationContainerMain>
 
-    <NotationContainerMain>
-      <NotationHorizontal>
-        <NotationVertical title="true" bottom="true">
-          <NotationBox>
-            <NotationTitle normal="true">Mouvement confié</NotationTitle>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical left="true" bottom="true">
-          <NotationBox>
-            <NotationText>809 008</NotationText>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical left="true" bottom="true">
-          <NotationBox>
-            <NotationText>734 924</NotationText>
-          </NotationBox>
-        </NotationVertical>
-      </NotationHorizontal>
-    </NotationContainerMain>
+    <main.NotationContainerMain>
+      <main.NotationHorizontal>
+        <main.NotationVertical title="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationTitle normal="true">Mouvement confié</main.NotationTitle>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical left="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationText>809 008</main.NotationText>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical left="true" bottom="true">
+          <main.NotationBox>
+            <main.NotationText>734 924</main.NotationText>
+          </main.NotationBox>
+        </main.NotationVertical>
+      </main.NotationHorizontal>
+    </main.NotationContainerMain>
 
-    <NotationContainerMain>
-      <NotationHorizontal>
-        <NotationVertical title="true">
-          <NotationBox>
-            <NotationTitle normal="true">
+    <main.NotationContainerMain>
+      <main.NotationHorizontal>
+        <main.NotationVertical title="true">
+          <main.NotationBox>
+            <main.NotationTitle normal="true">
               Pourcentage de chiffre d’affaires
-            </NotationTitle>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical left="true">
-          <NotationBox>
-            <NotationText>50 %</NotationText>
-          </NotationBox>
-        </NotationVertical>
-        <NotationVertical left="true">
-          <NotationBox>
-            <NotationText>50 %</NotationText>
-          </NotationBox>
-        </NotationVertical>
-      </NotationHorizontal>
-    </NotationContainerMain>
-  </NotationContainer>
+            </main.NotationTitle>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical left="true">
+          <main.NotationBox>
+            <main.NotationText>50 %</main.NotationText>
+          </main.NotationBox>
+        </main.NotationVertical>
+        <main.NotationVertical left="true">
+          <main.NotationBox>
+            <main.NotationText>50 %</main.NotationText>
+          </main.NotationBox>
+        </main.NotationVertical>
+      </main.NotationHorizontal>
+    </main.NotationContainerMain>
+  </main.NotationContainer>
 );

@@ -1,9 +1,9 @@
 // Call Styles
-import { Title, Text, Container } from "../../assets/css/normalize-css";
+import main from "../../assets/css/main-css";
 // Succursale Content
 export const SuccursaleInfo = () => (
-  <Container padding="3" width="40">
-    <Title>SUCCURSALE</Title>
-    <Text>626</Text>
-  </Container>
+  <main.Container padding="3" width="40">
+    <main.Title>SUCCURSALE</main.Title>
+    <main.Text>626</main.Text>
+  </main.Container>
 );

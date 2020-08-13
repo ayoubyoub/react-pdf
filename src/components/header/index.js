@@ -3,24 +3,18 @@ import { BanqueInfo } from "./banque";
 import { SuccursaleInfo } from "./succursale";
 import { AgenceInfo } from "./agence";
 // Call Styles
-import {
-  HeaderMain,
-  Company,
-  CompanyLogo,
-  CompanyInfo,
-  MainInfo,
-} from "../../assets/css/normalize-css";
+import main from "../../assets/css/main-css";
 // Header Content
 export const Header = ({ children }) => (
-  <HeaderMain>
-    <Company>
-      <CompanyLogo src="https://i.ibb.co/pRZpGnv/image.png" alt="logo" />
-      <CompanyInfo>BANQUE POPULAIRE</CompanyInfo>
-    </Company>
-    <MainInfo>
+  <main.HeaderMain>
+    <main.Company>
+      <main.CompanyLogo src="https://i.ibb.co/pRZpGnv/image.png" alt="logo" />
+      <main.CompanyInfo>BANQUE POPULAIRE</main.CompanyInfo>
+    </main.Company>
+    <main.MainInfo>
       <BanqueInfo />
       <SuccursaleInfo />
       <AgenceInfo />
-    </MainInfo>
-  </HeaderMain>
+    </main.MainInfo>
+  </main.HeaderMain>
 );
