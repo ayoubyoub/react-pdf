@@ -38,8 +38,8 @@ class IndexPage extends React.Component {
             html,
             body {
               margin: 0;
-							overflow: hidden;
-							-webkit-print-color-adjust: exact;
+              overflow: hidden;
+              -webkit-print-color-adjust: exact;
             }
             * {
               boxsizing: "border-box";
@@ -47,7 +47,21 @@ class IndexPage extends React.Component {
           `}
         />
         <Fonctionnement />
-				<Footer />
+				<button
+          style={{
+						position: "absolute",
+						cursor: "pointer",
+            right: 0,
+            top: 0,
+            margin: "5px",
+          }}
+          onClick={() =>
+            window.open("http://localhost:3000/?exportPDF=true", "_blank")
+          }
+        >
+          PDF
+        </button>
+        <Footer />
       </ThemeProvider>
     );
   }
