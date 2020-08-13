@@ -6,6 +6,7 @@ import Fonctionnement from "../components/decision/fonctionnement";
 import Layout from "../components/layout";
 import { componentToPDFBuffer } from "../lib";
 import { Footer } from "../components/footer";
+import normalizeCSS from "../css/normalize-css";
 
 class IndexPage extends React.Component {
   static async getInitialProps({ req, res, query }) {
@@ -32,26 +33,12 @@ class IndexPage extends React.Component {
   render() {
     return (
       <ThemeProvider theme={DefaultTheme}>
-        <Global
-          styles={css`
-            @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
-            html,
-            body {
-							margin: 0;
-							font-family: "Open Sans";
-              overflow: hidden;
-              -webkit-print-color-adjust: exact;
-            }
-            * {
-              boxsizing: "border-box";
-            }
-          `}
-        />
+        <Global styles={css([normalizeCSS()])} />
         <Fonctionnement />
-				<button
+        <button
           style={{
-						position: "absolute",
-						cursor: "pointer",
+            position: "absolute",
+            cursor: "pointer",
             right: 0,
             top: 0,
             margin: "5px",

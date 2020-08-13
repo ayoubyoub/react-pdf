@@ -4,24 +4,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import DefaultTheme from "react-tailwhip";
 import { Footer } from "../footer";
+import normalizeCSS from "../../css/normalize-css";
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
-		<Global
-          styles={css`
-            @import url("https://fonts.googleapis.com/css2?family=Open+Sans");
-            html,
-            body {
-							margin: 0;
-							font-family: "Open Sans";
-							overflow: hidden;
-							-webkit-print-color-adjust: exact;
-            }
-            * {
-              boxsizing: "border-box";
-            }
-          `}
-        />
+    <Global styles={css([normalizeCSS()])} />
     <html>
       <head>
         <meta charSet="utf8" />
