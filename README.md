@@ -9,10 +9,10 @@ yarn start
 
 ## To see HTML version
 
-<http://localhost:3000/>
+<http://localhost:4000/>
 
 ## To see PDF version
 
-<http://localhost:3000/?exportPDF=true>
+<http://localhost:4000/?exportPDF=true>
 
 > You may want to open the PDF url in Insomnia.
