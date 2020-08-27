@@ -1,31 +1,26 @@
 import { Global, css } from "@emotion/core";
 import { ThemeProvider } from "emotion-theming";
-import React from "react";
+import React, { Component } from "react";
+import parse from "urlencoded-body-parser";
 import DefaultTheme from "react-tailwhip";
 import Fonctionnement from "../components/decision/fonctionnement";
 import Layout from "../components/layout";
 import { componentToPDFBuffer } from "../assets/lib";
 import { Footer } from "../components/footer";
 import normalizeCSS from "../assets/css/normalize-css";
-// Import Data
-import data from "../data/data.json";
-class IndexPage extends React.Component {
-  static async getInitialProps({ req, res, query }) {
-    const exportPDF = query.exportPDF === "true";
-    const isServer = !!req;
-    if (!process.browser && isServer && exportPDF) {
+
+class IndexPage extends Component {
+  static async getInitialProps(context) {
+    if (context.req.method === "POST") {
+      const req = await parse(context.req);
+      const data = JSON.parse(Object.keys(req)[0]);
       const buffer = await componentToPDFBuffer(
         <Layout>
           <Fonctionnement data={data} />
           <Footer data={data} />
         </Layout>
       );
-      res.setHeader(
-        "Content-disposition",
-        'attachment; filename="Fonctionnement.pdf'
-      );
-      res.setHeader("Content-Type", "application/pdf");
-      res.end(buffer);
+      context.res.end(buffer);
     }
     return {
       pdf: null,
@@ -45,9 +40,7 @@ class IndexPage extends React.Component {
             top: 0,
             margin: "5px",
           }}
-          onClick={() =>
-            window.open("http://localhost:3000/?exportPDF=true", "_blank")
-          }
+          onClick={() => window.open("http://localhost:4000", "_blank")}
         >
           PDF
         </button>
