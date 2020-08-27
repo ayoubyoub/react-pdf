@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Server-side PDF generation using Puppeteer, React, and Next",
   "scripts": {
-    "start": "next",
+    "start": "next -p 4000",
     "build": "next build"
   },
   "browser": {
